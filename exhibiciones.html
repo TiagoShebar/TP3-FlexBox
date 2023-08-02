@@ -2,101 +2,120 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Exhibiciones</title>
     <script src="https://kit.fontawesome.com/998a118c10.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html"><img src="Imagenes/bandera.png"></a>
-            <a href="index.html">Inicio</a>
-            <a href="exhibiciones.html">Exhibiciones</a>
-            <a href="eventos.html">Eventos</a>
-            <a href="contacto.html">Contacto</a>
+            <a href="index.html"><img src="Imagenes/afaLogo.png"></a>
+            <div class="header-guides">
+                <a href="index.html">INICIO</a>
+                <a href="exhibiciones.html">EXHIBICIONES</a>
+                <a href="eventos.html">EVENTOS</a>
+                <a href="contacto.html">CONTACTO</a>
+            </div>
+            <div class="header-links">
+                <a href="https://twitter.com/AFA" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/AFAOFICIAL/" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/afa.oficial/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.youtube.com/user/AFAOficial" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="image-text">
-                <img src="Imagenes/1978.jpg">
-            <div>
-                <h2>1930</h2>
-                <p>Lmasjbfbgubvudbgubndbjdsgbjba jfkwkJBSDJKGBJKDGJKRBJBEJKBKJbJKjbsgjbjejgjwebjbjg</p>
-            </div>
-        </section>
-        <section class="image-text">
-            <div>
-                <h2>1990</h2>
-                <p>Lmasjbfbgubvudbgubndbjdsgbjba jfkwkJBSDJKGBJKDGJKRBJBEJKBKJbJKjbsgjbjejgjwebjbjg</p>
-            </div>
-                <img src="Imagenes/1978.jpg">
-        </section>
-        <section class="image-text">
-                <img src="Imagenes/1978.jpg">
-            <div>
-                <h2>2014</h2>
-                <p>Lmasjbfbgubvudbgubndbjdsgbjba jfkwkJBSDJKGBJKDGJKRBJBEJKBKJbJKjbsgjbjejgjwebjbjg</p>
-            </div>
-        </section>
-        <section class="future-text-images">
-            <div>
-                <h2>Victorias en la Copa America</h2>
-                <p></p>
-            </div>
-            <div>
-                <div>
-                    <img src="Imagenes/1978.jpg">
-                    <img src="Imagenes/1978.jpg">
-                </div>
-                <div>
-                    <img src="Imagenes/1978.jpg">
-                    <img src="Imagenes/1978.jpg">
-                </div>
-                <div>
-                    <img src="Imagenes/1978.jpg">
-                    <img src="Imagenes/1978.jpg">
-                </div>
-            </div>
-        </section>
-    </main>
+    <div class="carousel-container">
+
+        <h1 style="font-size: 200%;text-align: center;">ARGENTINA EN LOS MUNDIALES</h1>
+        <input type="radio" name="slide" id="slide1" checked hidden>
+        <input type="radio" name="slide" id="slide2" hidden>
+        <input type="radio" name="slide" id="slide3" hidden>
+        <input type="radio" name="slide" id="slide4" hidden>
+        <input type="radio" name="slide" id="slide5" hidden>
+        <input type="radio" name="slide" id="slide6" hidden>
+        
+        <div class="carousel">
+          <div class="slide slide1">
+            <img src="Imagenes/1930.jpg" alt="Imagen 1">
+            <div class="image-description">Argentina subcampeona 1930</div>
+            <label for="slide6" class="prev">&#10094;</label>
+            <label for="slide2" class="next">&#10095;</label>
+          </div>
+          <div class="slide slide2">
+            <img src="Imagenes/1978.jpg" alt="Imagen 2">
+            <div class="image-description">Argentina campeona 1978</div>
+            <label for="slide1" class="prev">&#10094;</label>
+            <label for="slide3" class="next">&#10095;</label>
+          </div>
+          <div class="slide slide3">
+            <img src="Imagenes/1986.jpg" alt="Imagen 3">
+            <div class="image-description">Argentina campeona 1986</div>
+            <label for="slide2" class="prev">&#10094;</label>
+            <label for="slide4" class="next">&#10095;</label>
+          </div>
+          <div class="slide slide4">
+            <img src="Imagenes/1990.jpg" alt="Imagen 4">
+            <div class="image-description">Argentina subcampeona 1990</div>
+            <label for="slide3" class="prev">&#10094;</label>
+            <label for="slide5" class="next">&#10095;</label>
+          </div>
+          <div class="slide slide5">
+            <img src="Imagenes/2014.jpg" alt="Imagen 5">
+            <div class="image-description">Argentina subcampeona 2014</div>
+            <label for="slide4" class="prev">&#10094;</label>
+            <label for="slide6" class="next">&#10095;</label>
+          </div>
+          <div class="slide slide6">
+            <img src="Imagenes/2022.jpg" alt="Imagen 6">
+            <div class="image-description">Argentina campeona 2022</div>
+            <label for="slide5" class="prev">&#10094;</label>
+            <label for="slide1" class="next">&#10095;</label>
+          </div>
+        </div>
+    
+        <div class="carousel-navigation">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <label for="slide4"></label>
+          <label for="slide5"></label>
+          <label for="slide6"></label>
+        </div>
+      </div>
     <footer>
-        <section>
-            <article class="h">
-                <h4>Horarios</h4>
-                <div>
-                    <p>Lunes: cerrado</p>
-                    <p>Martes: de 11:00 a 20:00</p>
-                    <p>Miércoles: de 11:00 a 20:00</p>
-                    <p>Jueves: de 11:00 a 20:00</p>
-                    <p>Viernes: de 11:00 a 20:00</p>
-                    <p>Sábado: de 10:00 a 20:00</p>
-                    <p>Domingo: de 10:00 a 20:00</p>
-                </div>
-            </article>
-            <article class="a">
-                <h4>Acompañan al museo</h4>
-                <div>
-                    <div>
-                        <img src="Imagenes/zurich.png">
-                        <img src="Imagenes/medife.png">
-                    </div>
-                    <div>
-                        <img src="Imagenes/eminent.png">
-                        <img src="Imagenes/tersuave.png">
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section>
-            <nav>
-                <a href="index.html"><img src="Imagenes/bandera.png"></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
-            </nav>
-        </section>
+        <div>
+            <div>
+                <span>BA</span>
+                <p>
+                    Sede Social: Viamonte 1366, (C1053ACB)
+                    <br>
+                    Ciudad Autónoma de Buenos Aires
+                    <br>
+                    Teléfono: + 54 11 4370-7900
+                </p>
+            </div>
+            <div>
+                <span>EZE</span>
+                <p>
+                    Predio de Ezeiza: Autopista Ricchieri y
+                   <br>
+                   Enrique Fernández Garcia, (1802), Ezeiza, Provincia de Buenos Aires
+                   <br>
+                   Teléfono: + 54 4480-9393
+                </p>
+            </div>
+        </div>
+        <nav>
+            <a href="https://www.facebook.com/AFAOFICIAL/" target="_blank"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/AFA" target="_blank"><i class="fa fa-twitter"></i></a>
+            <a href="https://www.instagram.com/afa.oficial/" target="_blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.youtube.com/user/AFAOficial" target="_blank"><i class="fa fa-youtube-play"></i></a>
+            <a href="https://onefootball.com/es/inicio" target="_blank"><img src="Imagenes/onefootball.png"></a>
+        </nav>
+        <article>
+            Copyright © 2023. Asociación del Fútbol Argentino. Todos los derechos reservados.
+        </article>
     </footer>
 </body>
 </html>
