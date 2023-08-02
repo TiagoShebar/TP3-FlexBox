@@ -78,7 +78,7 @@ header nav div a{
 main {
     margin: 0 auto;
     width: 75%;
-    margin-top: 6%;
+    margin-top: 7.5%;
     min-width: 1000px;
     min-height: 562px;
     display: flex;
@@ -184,6 +184,7 @@ main {
     flex-direction: column;
     margin-left: 1%;
     width: 23%;
+    margin-top: 3%;
 }
 .noticias article .iframe-content h3 {
     color: #00BCD4;
@@ -204,6 +205,7 @@ main {
 .banner-conteiner{
     width: 90%;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 .banner-conteiner article img {
@@ -245,45 +247,6 @@ main {
     font-size: 100%;
     text-align: center;
 }
-
-.galeria {
-    margin-top: 6%;
-}
-
-.galeria h1{
-    text-align: center;
-    font-size: 250%;
-}
-
-.galeria article{
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.galeria article img{
-    width: 30%;
-}
-
-.galeria p{
-    text-align: center;
-    font-size: 120%;
-}
-
-.galeria div{
-    width: 70%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.galeria div img{
-    width: 10%;
-}
-
 
 .contacto {
     width: 70%;
@@ -391,6 +354,11 @@ form input[type="text"]:focus{
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+  }
+
+  .carousel-container h1{
+    font-size: 190%;
+    text-align: center;
   }
   
   .carousel {
