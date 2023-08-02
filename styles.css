@@ -30,7 +30,7 @@ header nav {
     align-items: center;
     text-align: center;
     justify-content: space-around;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -230,7 +230,7 @@ main {
     transform: translateY(2%);
     transition: 1s;
     background-color: rgba(206, 204, 204, 0.658);
-    box-shadow: 0 0 15px rgb(0, 0, 0);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .eventos div:hover {
@@ -243,8 +243,9 @@ main {
 }
 
 .eventos div p{
-    width: 100%;
+    width: 80%;
     font-size: 100%;
+    margin: 0 auto;
     text-align: center;
 }
 
@@ -350,7 +351,7 @@ form input[type="text"]:focus{
   
 .carousel-container {
     width: 80%;
-    max-width: 750px;
+    max-width: 65%;
     margin: 0 auto;
     position: relative;
     overflow: hidden;
